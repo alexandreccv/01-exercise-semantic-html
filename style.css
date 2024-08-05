@@ -1,32 +1,36 @@
-body {
+body.dark-mode {
   background-color: #0f172a;
+  color: #e2e8f0;
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
-  color: #e2e8f0;
+  
 }
 
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 h1 {
   text-align: center;
 }
 
-ul, lista {
+ul, .lista {
   width: 35%;
 }
 
-img  {
+img {
   border: 1px solid wheat;
   display: flex;
   margin: auto;
 }
 
-nav {
-  color: #e2e8f0;
-}
-
-a {
-  color: #e2e8f0;
+nav, a {
+  color: inherit;
 }
 
 #video {
@@ -37,4 +41,16 @@ a {
 iframe {
   display: flex;
   margin: auto;
+}
+
+h1, nav, a, footer p {
+  color: inherit;
+}
+
+#theme-toggle {
+  width: 120px;
+  height: 35px;
+  display: block;
+  margin-right: 20px;
+  margin-left: auto;
 }
